@@ -1,5 +1,13 @@
-html, body {height: 100%; padding-top: 30px;}
-.banner {width: 90%; height: 80%; margin: auto;
+/* 
+background-image: url(경로) <- 경로는 css위치에서의 경로로 선택한다.
+background-position: 상하(top|center|bottom) 좌우(left|center|right)
+background-repeat: repeat(기본값), no-repeat, repeat-x, repeat-y
+background-attachment: scroll(기본값), fixed(문서에 붙는다. parallax효과를 볼 수 있다.)
+background-size: initial, 100% auto, auto 100%, cover(100% 100%), contain(auto auto)
+*/
+html, body {height: 100%;}
+body {padding-top: 50px;}
+.banner {width: 90%; height: calc(100% - 50px); margin:auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -7,10 +15,10 @@ html, body {height: 100%; padding-top: 30px;}
 	background-color: #333;
 	background-image: url('../img/paris.jpg');
 	background-position: center center;
-	background-repeat: repeat-y;
+	background-repeat: no-repeat;
 	/* PC에서만 적용됨 */
-	/* background-attachment: fixed;	 */
-
+	background-attachment: fixed;
+	background-size: cover;
 }
 .cont {padding: 5%; font-size: 2rem; background-color: #ccc; 
 	text-align: justify}
