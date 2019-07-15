@@ -1,1 +1,16 @@
-html, body {height: 100%;}
+html, body {height: 100%; padding-top: 30px;}
+.banner {width: 90%; height: 80%; margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: #333;
+	background-image: url('../img/paris.jpg');
+	background-position: center center;
+	background-repeat: repeat-y;
+	/* PC에서만 적용됨 */
+	/* background-attachment: fixed;	 */
+
+}
+.cont {padding: 5%; font-size: 2rem; background-color: #ccc; 
+	text-align: justify}
